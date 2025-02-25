@@ -1,0 +1,23 @@
+{
+  "name": "firebase-notification-service",
+  "version": "1.0.0",
+  "description": "Firebase notification service using Node.js",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "firebase-admin": "^11.0.1",
+    "express": "^4.18.1",
+    "cors": "^2.8.5",
+    "body-parser": "^1.19.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.3"
+  },
+  "engines": {
+    "node": "18"
+  }
+}
