@@ -1,7 +1,7 @@
 const admin = require('firebase-admin');
 const express = require('express');
 const cors = require('cors');
-const bodyParser = require('body-parser'); // Import body-parser
+const bodyParser = require('body-parser');
 
 // Initialize Firebase Admin SDK
 const serviceAccount = require('./serviceAccountKey.json');
@@ -52,8 +52,8 @@ app.post('/sendNotification', async (req, res) => {
       },
       data: {
         click_action: 'FLUTTER_NOTIFICATION_CLICK',
-        type: type || 'general', // Add a type field
-        ...data // Include any additional data
+        type: type || 'general',
+        ...data
       },
       token: fcmToken
     };

@@ -101,3 +101,4 @@ dist
 *.swo
 # NetBeans specific
 /nbproject/private/
+serviceAccountKey.json
